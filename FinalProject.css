@@ -635,8 +635,6 @@ Section: Pricing
     width: 100%;
     display: flex;
     justify-content: center;
-    
-
 }
 
 /* Personal */
@@ -808,6 +806,7 @@ Section: Pricing
     border-bottom: 1px solid #e2e2e2;
     border-radius: 2px;
     padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .feature__mid--title {
@@ -886,4 +885,126 @@ Section: Pricing
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+}
+
+/*
+
+Testimonials
+
+*/
+
+.row {
+    display: flex;  
+    align-items: center;
+}
+
+.test__box1 {
+    width: 100%;
+    margin-right: 4%;
+}
+
+.test__img {
+   width: 100%;
+}
+
+.test__box2 {
+    width: 100%;
+}
+
+.testimonials {
+    font-size: 18px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.testimonials__para{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #8f8f8f;
+    margin-bottom: 32px;
+}
+
+.lower {
+    
+}
+
+.ratings {
+    color: #f7ae56;
+}
+
+.testimonials__quote {
+    font-size: 22px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin: 18px 0;
+}
+
+.para__2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #6a6a6a;
+    margin: 16px 0 40px 0;
+}
+
+.clients {
+    width: 100%;
+    display: flex;    
+}
+
+.client__box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.client__img {
+    width: 20%;
+    border-radius: 9999px;
+
+}
+
+.client__info {
+    width: 100%;
+    margin-left: 26px;
+}
+
+.client__name {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.client__occupation {
+    font-size: 18px;
+    font-weight: 450;
+    color: #8c8c8c;
+}
+
+.btn__box {
+    
+}
+
+.controls {
+    display: flex;
+}
+
+.control-btn {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 9999px;
+    margin: 0 12px;
+}
+
+.arrow__direction {
+    width: 45%;
+}
+
+.divider {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-right: 1px solid #5b5be84a;
 }

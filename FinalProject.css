@@ -893,7 +893,7 @@ Testimonials
 
 */
 
-.row {
+.row {;
     display: flex;  
     align-items: center;
 }
@@ -909,6 +909,7 @@ Testimonials
 
 .test__box2 {
     width: 100%;
+    
 }
 
 .testimonials {
@@ -949,7 +950,7 @@ Testimonials
 
 .clients {
     width: 100%;
-    display: flex;    
+    display: flex;   
 }
 
 .client__box {
@@ -1004,7 +1005,75 @@ Testimonials
 }
 
 .divider {
-    margin-top: 0.75rem;
+    margin-top: 0.75rem; 
     margin-bottom: 0.75rem;
     border-right: 1px solid #5b5be84a;
 }
+
+
+/*
+
+FAQS
+
+*/
+
+.faqs__row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faqs__box--main{
+    width: 100%;
+    max-width: 900px;
+}
+
+.faqs__box1{
+    text-align: center;
+}
+
+.faqs__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.faqs__slogan{
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.faqs__para{
+    width: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #8f8f8f;
+    margin: 0 auto;
+    padding-top: 8px;
+    line-height: 1.5;
+}
+
+.faqs__box2{
+    width: 100%;
+    margin-top: 4rem;
+    
+}
+
+.faqs__items{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #edf1f6;
+    padding: 24px;
+}   
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+}
+

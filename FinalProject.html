@@ -6,45 +6,68 @@
     <title>Document</title>
     <link rel="stylesheet" href="FinalProject.css">
     <script src="https://kit.fontawesome.com/966c33780b.js" crossorigin="anonymous"></script>
+    <script src="./FinalProject.js"></script>
 </head>
 <body>
     <!--Section Navigation Bar-->
     <section id="landing">
-    
+        <div class="nav">
             <div class="row">
-                <div class="nav">
-                    <div class="logo__box">
-                        <figure class="logo__img--wrapper">
-                            <img class="nav__logo" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="">
-                            <p class="logo__name">Treact</p>
-                        </figure>
-                    </div>
-                    <div class="link__box">
-                        <ul class="nav__link-list">
-                            <li class="nav__link--item">
-                                <a class="nav__link" href="">About</a>
-                            </li>
-                            <li class="nav__link--item">
-                                <a class="nav__link" href="">Blog</a>
-                            </li>
-                            <li class="nav__link--item">
-                                <a class="nav__link" href="">Pricing</a>
-                            </li>
-                            <li class="nav__link--item">
-                                <a class="nav__link" href="">Contact Us</a>
-                            </li>
-                           
-                        </ul>
-                    </div>    
-                    <div class="signup__box">
-                        <a class="nav__link--login" href="">Login</a>
-                        <button class="btn">
-                            Sign Up
-                        </button>   
-                    </div>
+                <div class="logo__box">
+                    <img class="nav__logo" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="">
+                    <div class="logo__title">Treact</div>
+                </div>
+                <div class="link__box">
+                    <ul class="nav__link-list">
+                        <li class="nav__link--item">
+                            <a class="nav__link" href="">About</a>
+                        </li>
+                        <li class="nav__link--item">
+                            <a class="nav__link" href="">Blog</a>
+                        </li>
+                        <li class="nav__link--item">
+                            <a class="nav__link" href="">Pricing</a>
+                        </li>
+                        <li class="nav__link--item">
+                            <a class="nav__link" href="">Contact Us</a>
+                        </li>                          
+                    </ul>
+                </div>    
+                <div class="signup__box">
+                    <a class="nav__link--login" href="">Login</a>
+                    <button class="btn">
+                        Sign Up
+                    </button>   
+                </div>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu, btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa--times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a class="menu__link" href="#values"  onclick="closeMenu()">About</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="#features"  onclick="closeMenu()">Features</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="#pricing"  onclick="closeMenu()">Pricing</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link no-cursor" href="#start"  onclick="closeMenu()">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        
+        </div>
+    
+                    
+            
+            
+
         <header>
             <div class="about__me--container">
                 <div class="about__me--row">

@@ -211,95 +211,85 @@ About Me
 
 */
 
+.about__me--section {
+    position: relative;
+}
 
 .about__me--container {
+    padding: 96px 0;
+}
+
+.about__me--row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.about__me--row{
-   width: 100%;
-    max-width: 1200px;
-    margin: 80px 40px;
-    line-height: 1.5;
-}
-
-.about__me--box{;
+.about__me--box {
     display: flex;
-    margin: 0 auto;
+    
 }
 
 .about__me--title{
-    width: 100%;
-    max-width: 1200px;
-   display: flex;
-   flex-direction: column;
-   margin: 0 auto;
+   width: 60%;
 
 }
 
 .title__about {
-    width: 90%;
     font-size: 48px;
-    font-weight: 700;
-    text-align: left;
-    
+    color: #1a202c;
+    line-height: 1.25;
 }
 
 .about__me--para{
-    width: 90%;
-    padding: 32px 0;
+    width: 100%;
+    margin: 32px 0;
     font-size: 20px;
-
+    line-height: 1.5;
 }
 
 .box__input {
+    width: 100%;
+    max-width: 448px;
+    height: 69px;
     position: relative;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
     display: flex;
-    right: 10%;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.email__input{
+.email__input {
     width: 100%;
-    border-radius: 9999px;
-    border-width: 1px;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
-    padding-left: 2rem;
+    border-radius:  500px;
+    border: 2px solid rgb(229, 231, 235);
+    padding: 20px 192px 20px 32px;
+    color: rgb(36, 62, 99);
+    font-size: 16px;
     font-weight: 500;
-    color: #e2e2e2;
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-    transition-duration: 300ms;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: border-color 300ms;
 }
 
 .input__btn {
-    right: 0px;
-    top: -25px ;
-    bottom: 0px;
-    margin: 0 auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: .5rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
+    z-index: 2;
+    margin: 8px;
+    height: calc(100%-16px);
+    border-radius: 500px;
+    width: 160px;
     border: none;
-    background-color: rgb(101 22 255);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 18px;
-    font-weight: 600;
-    color: rgb(246 250 252);
-    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-    transition-duration: 300ms;
-
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms ease;
+    cursor: pointer;
+    padding: 18px;
 }
 
 @media (min-width: 640px) {
@@ -312,43 +302,98 @@ About Me
     }
 }
 
-.box__img {
-    width: 100%;
-    margin: 25px 0;
-}
-
 .trust__customer {
-    color: rgb(183, 183, 183);
-    font-weight: bold;
-    padding: 50px 0 12px 0;
+    margin-top: 80px;
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6;
 }
 
 .customer__img{
     width: 90%;
     filter: grayscale(1) invert(1);
+    margin-top: 16px;
 }
 
 .img {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    
-}
-
-@media (min-width: 1023px) {
-    .img {
-        justify-content: flex-end;
-    }
+    width: 100%
 }
 
 .about__me--img {
     width: 100%;
-    min-width: 0px;
-    height: auto;
-    vertical-align: middle;
-    overflow-clip-margin: content-box;
+    margin-left: 50px;
+}
+
+
+@media (max-width: 1280px) {
+
+    .title__about {
+        font-size: 36px;
+        color: #1a202c;
+        line-height: 1.25;
+    }
+
+    .about__me--para {
+        font-size: 16px;    
+    }
+
+    .customer__img {
+        padding-right: 64px;
+    }
+    
+    .about__me--row {
+        align-items: flex-end;
+    }
+
+    .img {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .about__me--img {
+        max-width: 512px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .about__me--row {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .about__me--box {
+       flex-direction: column;
+       align-items: center;
+       
+    
+    }
+
+    .about__me--title {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title__about {
+        font-size: 30px;
+    }
+
+    .about__me--para {
+        margin: 20px 0;
+    }
+
+    .trust__customer {
+        margin-top: 40px;
+    }
 
 }
+
+
+
 
 /*
 

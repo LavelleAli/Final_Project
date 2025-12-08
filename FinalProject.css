@@ -149,6 +149,11 @@ NAV
     display: none;
 }
 
+.fa-bars {
+    transform: scale(.6);
+
+}
+
 .menu__backdrop {
     position: absolute;
     background-color: #242424;
@@ -211,6 +216,7 @@ About Me
 
 */
 
+
 .about__me--section {
     position: relative;
 }
@@ -234,8 +240,7 @@ About Me
 }
 
 .about__me--title{
-   width: 60%;
-
+   width: 100%;
 }
 
 .title__about {
@@ -274,6 +279,7 @@ About Me
     bottom: 0;
     z-index: 1;
     transition: border-color 300ms;
+    
 }
 
 .input__btn {
@@ -292,28 +298,19 @@ About Me
     padding: 18px;
 }
 
-@media (min-width: 640px) {
-    .input__btn {
-        position: absolute;
-        margin-top: 0.5rem 8px;
-        margin-bottom: 0.5rem;
-        width: 10rem;
-        line-height: 1;
-    }
-}
-
 .trust__customer {
     margin-top: 80px;
     color: #a0aec0;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.6;
+    padding-bottom: 12px;
 }
 
 .customer__img{
-    width: 90%;
+    width: 100%;
     filter: grayscale(1) invert(1);
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 
 .img {
@@ -325,7 +322,7 @@ About Me
     margin-left: 50px;
 }
 
-
+ 
 @media (max-width: 1280px) {
 
     .title__about {
@@ -348,7 +345,7 @@ About Me
 
     .img {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .about__me--img {
@@ -357,18 +354,14 @@ About Me
 }
 
 @media (max-width: 1024px) {
-
-    .about__me--row {
-        display: flex;
-        flex-direction: column;
-        
+    
+    .btn__menu {
+        display: block;
     }
 
     .about__me--box {
        flex-direction: column;
        align-items: center;
-       
-    
     }
 
     .about__me--title {
@@ -384,16 +377,59 @@ About Me
 
     .about__me--para {
         margin: 20px 0;
+        width: 100%;
     }
 
     .trust__customer {
         margin-top: 40px;
+        font-size: 14px;
+        letter-spacing: 1px;
     }
 
+    .customer__img {
+        margin-top: 24px;
+        padding-right: 0px;
+    }
+
+    .about__me--img {
+        margin: 32px;
+        
+    }
 }
 
+@media (max-width: 639px) {
 
+    .about__me--title{
+        width: 100%;
+    }
 
+    .box__input {
+        width: 120%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .email__input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
+        margin-bottom: 4px;
+    }
+
+    .input__btn {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+
+    .trust__customer {
+        font-size: 14px;
+        letter-spacing: .05rem;
+    }
+}
 
 /*
 

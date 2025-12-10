@@ -100,10 +100,9 @@ NAV
     width: 100%;
     display: flex;
     justify-content: flex-end;
-
-    
 }
-.nav__link--item{;
+
+.nav__link--item{
     display: flex;
     font-weight: 450;
 
@@ -216,7 +215,10 @@ About Me
 
 */
 
-
+#landing {
+    position: relative;
+    padding: 0 32px;
+}
 .about__me--section {
     position: relative;
 }
@@ -369,6 +371,7 @@ About Me
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 60%;
     }
 
     .title__about {
@@ -436,9 +439,14 @@ About Me
 FEATURES
 
 */
+#features {
+    position: relative;
+    padding: 0 32px;
+}
 
 .features__row {
     width: 100%;
+    max-width: 1024px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -454,32 +462,43 @@ FEATURES
 }
 
 .features__heading {
-    font-size: 22px;
-    padding-bottom: 24px;
+    font-size:20px;
+    font-weight: 700;
+    color: #6415ff;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
 }
 
 .slogan {
-    font-size: 56px;
+    font-size: 52px;
     font-weight: 900;
-    padding-bottom: 24px;
+    color: #243e63;
+    line-height: 1.5;
+    margin: 16px 0;
+    letter-spacing: 0.025rem;
 }
 
 .feature__summary{
-    width: 60%;
+    width: 100%;
+    max-width: 576px;
     font-weight: 450;
-    font-size: 19px;
+    font-size: 18px;
+    font-weight: 500;
     padding-bottom: 56px;
     text-align: center;
     color: #8f8f8f;
+    line-height: 1.625;
 }
 
 .feature__layout {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 40px;
 }
 
 .feature__items {
+    width: calc(100%/2);
     flex: 0 0 calc(33.33% - 10px);
     display: flex;
     justify-content: center;
@@ -496,13 +515,62 @@ FEATURES
 .feature__item--text {
     font-size: 16px;
     margin-left: 18px;
-    width: 50%;
+    width: 100%;
     line-height: 1.8;
 }
 
 .feature__item--heading {
     font-size: 26px;
     font-weight: 700;
+    padding-bottom: 6px;
+}
+
+.feature__para {
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 2;
+    color: #7c8ba1;
+}
+
+@media(max-width:1024px) {
+    
+    .slogan {
+        font-size: 48px;
+    }
+
+    .feature__summary {
+        font-size: 16px;
+    }
+
+    .feature__layout {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+       
+    }
+
+    .feature__items {
+        margin: 0 auto;
+        margin-bottom: 80px;
+        margin-right: 100px;
+    }
+
+    .feature__item--heading {
+        width: 150%;
+    }
+
+    .feature__para {
+        width: 190%;
+
+    }
+
+    .feature__item--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
 }
 
 /*

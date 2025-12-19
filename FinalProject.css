@@ -376,11 +376,12 @@ About Me
 
     .title__about {
         font-size: 30px;
+        width: 115%;
     }
 
     .about__me--para {
         margin: 20px 0;
-        width: 100%;
+        width: 115%;
     }
 
     .trust__customer {
@@ -390,8 +391,9 @@ About Me
     }
 
     .customer__img {
-        margin-top: 24px;
-        padding-right: 0px;
+        margin-top: 12px;
+        padding-right: 0;
+        padding-top: 0;
     }
 
     .about__me--img {
@@ -539,7 +541,7 @@ FEATURES
     }
 
     .feature__summary {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .feature__layout {
@@ -569,8 +571,27 @@ FEATURES
         flex-direction: column;
         justify-content: center;
     }
+}
 
-    
+@media ( max-width:768px) {
+
+    .features__heading {
+        margin-bottom: 16px;
+    }
+
+    .slogan {
+        width: 105%;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+
+    .feature__summary {
+        font-size:14px;
+    }
+    .feature__layout {
+        width: calc(100%/2);
+    }
+
 }
 
 /*
@@ -579,51 +600,93 @@ Quality Work
 
 */
 
-
+#quality__work {
+    padding: 0 32px;
+}
 .container {
-    margin: 12rem 20px;
+    padding: 96px 0;
+}
+
+ .qw__row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .qw__slogan{
-    width: 100%;
     font-size: 48px;
     font-weight: 900;
-    padding: 2px 0;;
+    line-height: 1.25;
+    margin: 16px 0;
+    letter-spacing: .025em;
 }
 
 .qw__para {
-    width: 100%;
-    line-height: 1.5;
+    width: 90%;
+    line-height: 1.65;
     color: rgb(124 139 161);
     font-size: 20px;
+    font-weight: 500;
 }
 
-.qw__feature--boxes {
-    width: 100%;
+/* .qw__feature--boxes { 
     max-width: 1200;
-    display: flex; 
-}
+    display: flex;
+    margin: 0 auto; 
+ }
+ */
 
 .qw__box1 {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 5rem;
+    max-width: 576px;
+    margin-right: 64px;
 }
 
 .qw__title{
     font-size: 18px;
-    letter-spacing: 2px;
+    font-weight: 700;
+    color: #6415ff;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 0 0;
 }
 
-.qw__box2 {
+/* .qw__box2 {
     width: 50%;
     border: 1px solid #e2e2e2;
+ } */
+
+.qw__img--wrapper {
+    width: 50%;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    position: relative;
+    margin: 0 56px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+}
+
+.quality__grid {
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    transform: scaleZ();
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: rgb(100, 21, 255);
+    color: rgba(100, 21, 255,);
+    z-index: 0;
+    display: block;
 }
 
 .qw__img {
     width: 100%;
+    z-index: 1;
 }
 
 .qw__input--btn {
@@ -656,6 +719,56 @@ Quality Work
     max-width: 1200px;
 }
 
+@media ( max-width:1024px) {
+    .qw__box1 {
+        margin-right: 0px;
+        padding-right: 48px;
+    }
+
+    .qw__slogan {
+        font-size: 36px;
+    }
+
+    .qw__para {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .qw__row {
+        flex-direction: column-reverse;
+    }
+
+    .qw__box1 {
+        width: 100%;
+        max-width: 448px;
+        padding: 0;
+        margin-top: 64px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .qw__slogan {
+        width: 90%;
+    }
+
+    .qw__para {
+        font-size: 14px;
+    }
+
+    .qw__img--wrapper {
+        width: 100%;
+        max-width: 448px;
+    }
+
+    .qw__input--btn {
+        transform:translateX(170px)
+    }
+}
 /* 
 
 Steps

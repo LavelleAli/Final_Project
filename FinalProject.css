@@ -1241,26 +1241,23 @@ Section: Pricing
 
 /* Personal */
 
-.personal {
-    width: calc(100%/3);
-    margin-top: 2rem;
-    margin-right: 32px;
-    position: relative;
-}
-
 .personal__box {
     position: relative;
     margin-top: 4rem;
     display: flex;
-    flex-direction: column;
     width: 100%;
     max-width: 24rem;
-    padding: 0.5rem 2rem;
-    text-align: center;
-    background-color: #ffffff;
-    color: #1A202C;
+    flex-direction: column;
     border-radius: 0.5rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+    background-color: rgb(255 255 255);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: rgb(26 32 44);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .gradient__cover{
@@ -1325,47 +1322,53 @@ Section: Pricing
 }
 
 .bottom__box {
-    display: flex;
-    justify-content: center;
-    padding: 24px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .buy__now {
-    width: 12vw;
-    height: 3.5vw;
-    border: none;
+
+    padding: 0.75rem 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 700;
+    color: rgb(247 250 252);
+    transition: all 300ms ease;
+    width: 100%;
     border-radius: 9999px;
-    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #f7fafc;
+    background: linear-gradient( 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100% );
     cursor: pointer;
 }
 
-/* Business */
 
-.business {
-    width: calc(100%/3);
-    margin-right:32px;
-    margin-top: 65px;
-    position: relative;
-}
+/* Business */
 
 .business__box1 {
     position: relative;
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: flex;
-    flex-direction: column;
     width: 100%;
     max-width: 24rem;
-    height: 40rem;
-    padding: 0.5rem 2rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: rgb(255 255 255);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 2rem;
+    padding-top: 0.5rem;
     text-align: center;
-    background-color: #ffffff;
-    color: #1A202C;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
-    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    color: rgb(26 32 44);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background: linear-gradient( 135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100% );
+
 }
 
 .top__box--business {
@@ -1432,27 +1435,26 @@ Section: Pricing
 }
 
 .buy-now-btn {
-    width: 12vw;
-    height: 3.5vw;
-    border: none;
+    padding: 0.75rem 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 700;
+    color: rgb(247 250 252);
+    transition: all 300ms ease;
+    width: 100%;
     border-radius: 9999px;
-    background-color: rgb(255, 255, 255);
-    color: #6f2fdf;
-    font-size: 16px;
-    font-weight: 500;
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6415ff;
+    background-color: #f7fafc;
     cursor: pointer;
-} */
-
-
+}
 
 /* Enterprise */
-
-.enterprise{
-    width: calc(100%/3);
-    margin-top: 2rem;
-    margin-right: 32px;
-    position: relative;
-}
 
 .enterprise__box {
     position: relative;
@@ -1477,7 +1479,7 @@ Section: Pricing
     height: 0.5rem;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
-    background: linear-gradient(115deg,rgb(199, 56, 56) 0%, rgb(254, 179, 179) 100%););
+    background: linear-gradient(115deg,rgb(199, 56, 56) 0%, rgb(254, 179, 179) 100%);
 }
 
 .top__box {
@@ -1537,7 +1539,26 @@ Section: Pricing
 }
 
 .buy__now--enterprise{
-    width: 12vw;
+
+    color: #f7fafc;
+    background: linear-gradient( 115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100% );
+    border-radius: 0.25rem;
+    border: none;
+    padding: 0.75rem 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 700;
+    transition: all 300ms ease;
+    width: 100%;
+    border-radius: 9999px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+
+    /* width: 12vw;
     height: 3.5vw;
     border: none;
     border-radius: 9999px;
@@ -1545,7 +1566,18 @@ Section: Pricing
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
-    cursor: pointer;
+    cursor: pointer; */
+}
+
+@media (max-width: 1280px) {
+   .bottom__box {
+    padding-left: 2rem;
+    padding-right: 2rem;
+   }
+
+   .buy__now {
+    max-width: none;
+   }
 }
 
 @media (max-width:1024px) {
@@ -1558,15 +1590,15 @@ Section: Pricing
         align-items: center;
     }
 
-    .personal {
+    .personal_box--2 {
         margin-right: 0px;
     }
 
-    .business {
+    .business__box1 {
         margin-right: 0px;
     }
 
-    .enterprise {
+    .enterprise__box {
         margin-right: 0px;
     }
 }
@@ -1582,12 +1614,7 @@ Section: Pricing
 }
 
 
-@media (max-width: 1023px) {
-    .pricing__box--2 {
-       display: flex;
-       flex-wrap: wrap;
-    }
-}
+
 
 /*
 

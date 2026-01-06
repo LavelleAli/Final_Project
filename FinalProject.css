@@ -510,6 +510,9 @@ FEATURES
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 24px;
 }
 
 .img__src {
@@ -530,6 +533,7 @@ FEATURES
     font-size: 26px;
     font-weight: 700;
     padding-bottom: 6px;
+    text-align: left;
 }
 
 .feature__para {
@@ -537,6 +541,7 @@ FEATURES
     font-weight: 450;
     line-height: 2;
     color: #7c8ba1;
+    text-align: left;
 }
 
 @media(max-width:1024px) {
@@ -717,6 +722,7 @@ Quality Work
 .qw__btn {
     color: #ffffff;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .qw__row {
@@ -737,6 +743,10 @@ Quality Work
     .qw__para {
         font-size: 16px;
     }
+
+    .feature__layout {
+        max-width: 768px;
+}
 }
 
 
@@ -774,7 +784,8 @@ Quality Work
         transform:translateX(170px)
     }
 }
-/* 
+
+/*
 
 Steps
 
@@ -1121,9 +1132,8 @@ Values
     }
 
     .value__row {
-        flex-direction: column;
+        flex-direction: row-reverse;
         margin-bottom: 170px;
-
     }
 
     .value__slogan {
@@ -1143,6 +1153,7 @@ Values
 @media (max-width: 768px) {
     .value__row {
         align-items: center;
+        flex-direction: column;
     }
 
    .value__box2 {
@@ -1756,9 +1767,12 @@ Testimonials
 }
 
 .divider {
-    margin-top: 0.75rem; 
+    margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-    border-right: 1px solid #5b5be84a;
+    border-right-width: 1px;
+    width: 0.5px;
+    background-color: #edf2f7;
+    height: 20px;
 }
 
 @media (max-width:1280px) {
